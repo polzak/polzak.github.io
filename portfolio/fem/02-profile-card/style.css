@@ -1,0 +1,118 @@
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  color: #2e3349;
+  font-weight: 700;
+  /* background-image: url('images/bg-pattern-bottom.svg'); */
+  background-color: hsl(185, 75%, 39%);
+}
+
+p {
+  margin: 0;
+}
+
+.card-container {
+  max-width: 350px;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.profile-header {
+  background-image: url(images/bg-pattern-card.svg);  
+  border-radius: 15px 15px 0 0;  
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -48px;
+  width: 104px;
+  height: 104px;
+  background-color: #ffffff;
+  border-radius: 100px;
+}
+
+.profile-image img {
+  width: 96px;
+  height: 96px;
+  border-radius: 100px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.headline {
+  display: flex;
+  margin-top: 24px;
+  gap: 10px;
+}
+
+.age {
+  color: #6b7082;
+  font-weight: 400;
+}
+
+.city {
+  margin-top: 8px;
+  vertical-align: baseline;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7082;
+
+}
+
+.stat-group {
+  display: flex;
+  margin-top: 28px;
+  border-top: 1px solid #e8e9ec;
+}
+
+.stat {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc {
+  font-size: 10px;
+  font-weight: 400;
+  color: #6b7082;
+  margin-top: 9px;
+  letter-spacing: 1.5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
