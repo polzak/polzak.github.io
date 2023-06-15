@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700');
+
+$font-primary: 'Outfit', sans-serif;
+$font-size-base: 15px;
+$font-size-attr: 11px;
+$font-wght-regular: 400;
+$font-wght-bold: 700;
+
+/* color scheme */
+
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(212, 45%, 89%);
+$grayish-blue: hsl(220, 15%, 55%);
+$dark-blue: hsl(218, 44%, 22%);
+$color-attr: hsl(228, 45%, 44%);
+
+/* measurement */
+
+$base-margin: 16px;
+$base-padding: 16px;
+$base-radius: 8px;
+
+/* layout */
+
+$layout-bp-mobile: 375px;
+$layout-bp-desktop: 1440px;
+
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: $light-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: $white;
+    max-width: 320 - ($base-margin + 12);
+    margin: $base-margin + 12;
+    padding: $base-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: $base-radius * 2;
+    font-size: $font-size-base;
+    font-family: $font-primary;
+}
+
+.box img {
+    width: 100%;
+    border-radius: $base-radius;
+    margin-bottom: $base-margin / 2;
+}
+
+.box h1 {
+    font-weight: $font-wght-bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.box p {
+    text-align: center;
+    margin: 0 ($base-margin) 1.6em ($base-margin);
+    color: $grayish-blue;
+}
+
+.attribution { 
+    font-size: $font-size-attr; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: $color-attr; 
+}
