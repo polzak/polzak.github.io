@@ -12,8 +12,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Screenshot
@@ -22,8 +20,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/qr-code-component--Vshy_jUhS)
-- Live Site URL: [Add live site URL here](https://qrcodecomponent.polzak.repl.co/)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/qr-code-component--Vshy_jUhS)
+- Live Site URL: [My design](https://polzak.github.io/portfolio/fem/01-qr-code/index.html)
 
 ## My process
 
@@ -44,5 +42,5 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Author
 
-- Website - [Seungwan Kim](https://www.polzak.net)
+- Website - [Seungwan Kim's Portfolio](https://polzak.github.io)
 - Frontend Mentor - [@polzak](https://www.frontendmentor.io/profile/polzak)

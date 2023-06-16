@@ -20,15 +20,15 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/screenshot.jpg)
 
 ### Links
 
-- Solution URL: [css code]()
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/profile-card-component-using-css-flexbox-wjHT-Z0hM9)
 - Live Site URL: [My design](https://polzak.github.io/portfolio/fem/02-profile-card/index.html)
 
 ## My process
-For the two circles on the background, I used absolute positioning to place it exactly. For the round profile image, I used margin-bottom to put it down. I used Flexbox to align almost everything in this project.
+For the two circles on the background, I used absolute positioning to place it exactly. For the round profile image, I used margin-bottom to put it down.  
 
 ### Built with
 
@@ -40,7 +40,3 @@ For the two circles on the background, I used absolute positioning to place it e
 
 - Website - [Seungwan Kim's Portfolio](https://polzak.github.io)
 - Frontend Mentor - [@polzak](https://www.frontendmentor.io/profile/polzak)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
