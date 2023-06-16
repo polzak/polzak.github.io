@@ -148,15 +148,18 @@ h1, h2 {
   color: #6b7082;
 }
 
-.stat-group {
-  display: flex;
+.stat-area {
   margin-top: 28px;
   border-top: 1px solid #e8e9ec;
+  padding: 24px 54px 24px 47px;
+}
+
+.stat-group {
+  display: flex;
+  justify-content: space-between;
 }
 
 .stat {
-  padding: 24px;
-  flex: 1;
   text-align: center;
 }
 
