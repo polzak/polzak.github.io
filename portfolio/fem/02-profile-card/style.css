@@ -5,10 +5,24 @@ body {
   font-weight: 700;
   /* background-image: url('images/bg-pattern-bottom.svg'); */
   background-color: hsl(185, 75%, 39%);
+  position: relative;
 }
 
 p {
   margin: 0;
+}
+
+.top-circle {
+  position: absolute;
+  top: -509px;
+  left: -285px;
+
+}
+
+.top-circle img {
+  width: 978px;
+  height: 976px;
+  transform: rotate(135deg);
 }
 
 .card-container {
@@ -116,3 +130,5 @@ p {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
