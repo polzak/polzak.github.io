@@ -25,12 +25,12 @@ p {
 
 /* background circles */
 
-.bg-circle > div {
+.bg-circle>div {
   position: absolute;
   z-index: -10;
 }
 
-.bg-circle > div > img {
+.bg-circle>div>img {
   width: 978px;
   height: 976px;
 }
@@ -40,17 +40,9 @@ p {
   left: -285px;
 }
 
-.top-circle img {
-  transform: rotate(135deg);
-}
-
 .bottom-circle {
   top: 376px;
   left: 692px;
-}
-
-.bottom-circle img {
-  transform: rotate(45deg);
 }
 
 /* card */
@@ -70,9 +62,30 @@ p {
   background-color: #ffffff;
 }
 
+@media only screen and (max-width: 400px) {
+  .card {
+    width: 326px;
+  }
+
+  .bg-circle>div>img {
+    width: 622px;
+    height: 621px;
+  }
+
+  .top-circle {
+    top: -355px;
+    left: -410px;
+  }
+
+  .bottom-circle {
+    top: 357px;
+    left: 165px;
+  }
+}
+
 .profile-header {
-  background-image: url(images/bg-pattern-card.svg);  
-  border-radius: 15px 15px 0 0;  
+  background-image: url(images/bg-pattern-card.svg);
+  border-radius: 15px 15px 0 0;
   height: 140px;
   display: flex;
   flex-direction: column;
@@ -80,13 +93,14 @@ p {
   align-items: center;
 }
 
-.profile-image { /* acts like a circle frame for the profile image */
+/* acts like a circle frame for the profile image */
+.profile-image {
   display: flex; /* puts the profile image at the center of this frame */
   justify-content: center;
   align-items: center;
   margin-bottom: -48px; /* moves the profile image down */
   width: 104px;
-  height: 104px; /* white margin beyond the profile image */
+  height: 104px; /* create white margins beyond the profile image */
   background-color: #ffffff;
   border-radius: 100px;
 }
@@ -109,7 +123,8 @@ p {
   margin-top: 72px;
 }
 
-.headline { /* Victor Crest 26 */
+/* Victor Crest 26 */
+.headline {
   display: flex;
   line-height: 23px;
   gap: 10px;
