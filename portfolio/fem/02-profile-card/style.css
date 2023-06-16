@@ -19,8 +19,13 @@ body {
   font-weight: 700;
 }
 
-p {
+h1, p {
   margin: 0;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /* background circles */
