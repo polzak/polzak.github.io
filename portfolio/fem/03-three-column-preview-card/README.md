@@ -47,7 +47,7 @@ I was not sure if it would make sense to give some px to a transparent border, a
 }
 ```
 
-Form elements do not inherit font by default. If I want them to, I need to set them to at the beginning of my style sheet.
+Form elements do not inherit font by default. If I want them to, [I need to set them to at the beginning of my style sheet.](https://stackoverflow.com/questions/6080413/input-doesnt-inherit-the-font-from-body)
 
 ```css
 input, select, textarea, button {
