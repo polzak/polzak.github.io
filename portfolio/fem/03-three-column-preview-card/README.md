@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](#)
-- Live Site URL: [You can see it here](https://polzak.github.io/portfolio/fem/03-three-column-preview-card/index.html)
+- Solution URL: [FEM My Solution](https://www.frontendmentor.io/solutions/3column-preview-card-using-normal-html-and-css-aXRP4x-ycY)
+- Live Site URL: [You can see my design here.](https://polzak.github.io/portfolio/fem/03-three-column-preview-card/index.html)
 
 ## My process
 
@@ -57,5 +57,5 @@ input, select, textarea, button {
 
 ## Author
 
-- Website - [Sengwan Kim's Portfolio](https://www.polzak.github.io)
+- Website - [Sengwan Kim's Portfolio](https://polzak.github.io)
 - Frontend Mentor - [@polzak](https://www.frontendmentor.io/profile/polzak)
