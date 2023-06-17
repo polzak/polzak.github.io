@@ -10,6 +10,7 @@
 
 body {
   margin: 0;
+  background-color: hsl(0, 0%, 95%);
   font-family: 'Lexend Deca', sans-serif;
   font-size: 15px;
   color: hsla(0, 0%, 100%, 0.75);
@@ -48,11 +49,28 @@ body {
 
 /* card contents */
 
-.title {
-  font-family: 'Big Shoulders Display', cursive;
+.card-contents {
+  margin: 48px;
 }
 
+.logo {
+  width: 64px;
+  height: 40px;
+}
 
+.logo img {
+  width: 100%;
+}
+
+.heading {
+  font-family: 'Big Shoulders Display', cursive;
+  margin-top: 35px;
+  color: hsl(0, 0%, 95%);
+}
+
+.cta {
+  background-color: hsl(0, 0%, 95%);
+}
 
 
 
