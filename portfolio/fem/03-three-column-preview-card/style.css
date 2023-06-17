@@ -59,7 +59,7 @@ h1, p {
   border-radius: 0 0 8px 8px;
 }
 
-.card:last-child(2) .cta {
+.card:last-child .cta {
   color: hsl(179, 100%, 13%);
 }
 
@@ -105,6 +105,36 @@ h1, p {
   letter-spacing: .8px;
   text-transform: capitalize;
 }
+
+/* desktop design */
+
+@media only screen and (min-width: 920px) {
+  .card-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    width: 307px;
+    height: 500px;
+    padding: 48px;
+  }
+
+  .card:nth-child(1) {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .card:last-child {
+    border-radius: 0 8px 8px 0;
+  }
+
+  .cta {
+    margin-top: 83px;
+  }
+  
+}
+
+
 
 
 /* FEM attribution  */
