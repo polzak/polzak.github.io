@@ -83,6 +83,10 @@ h1, p {
   height: 48px;
   border-radius: 25px;
   border: 2px solid transparent;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  text-transform: capitalize;
   transition: all .3s ease; /* makes the hover transition softer */
 }
 
@@ -96,15 +100,6 @@ h1, p {
 
 .card:last-child .cta {
   color: hsl(179, 100%, 13%);
-}
-
-.cta p {
-  /* makes it wrapped in a p tag to match the text size with that in the Figma file */
-  display: inline-block;
-  font-size: 15px;
-  line-height: 25px;
-  letter-spacing: .8px;
-  text-transform: capitalize;
 }
 
 /* interactive button */
