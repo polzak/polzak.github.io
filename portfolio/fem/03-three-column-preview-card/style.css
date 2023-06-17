@@ -9,14 +9,50 @@
 }
 
 body {
+  margin: 0;
   font-family: 'Lexend Deca', sans-serif;
   font-size: 15px;
   color: hsla(0, 0%, 100%, 0.75);
 }
 
-.headline {
+/* card */
+
+.card-container {
+  width: 100%;
+  margin: 88px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.card {
+  width: 327px;
+  height: 441px;
+}
+
+.card:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 8px 8px 0 0;
+}
+
+.card:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card:last-child {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 8px 8px;
+
+}
+
+/* card contents */
+
+.title {
   font-family: 'Big Shoulders Display', cursive;
 }
+
+
 
 
 
