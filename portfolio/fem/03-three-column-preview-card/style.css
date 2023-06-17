@@ -42,25 +42,13 @@ h1, p {
   border-radius: 8px 8px 0 0;
 }
 
-.card:nth-child(1) .cta {
-  color: hsl(31, 77%, 52%);
-}
-
 .card:nth-child(2) {
   background-color: hsl(184, 100%, 22%);
-}
-
-.card:nth-child(2) .cta {
-  color: hsl(184, 100%, 22%);
 }
 
 .card:last-child {
   background-color: hsl(179, 100%, 13%);
   border-radius: 0 0 8px 8px;
-}
-
-.card:last-child .cta {
-  color: hsl(179, 100%, 13%);
 }
 
 /* card contents */
@@ -94,7 +82,20 @@ h1, p {
   width: 146px;
   height: 48px;
   border-radius: 25px;
-  border: transparent;
+  border: 2px transparent;
+  transition: all .2s ease; /* makes the hover transition softer */
+}
+
+.card:nth-child(1) .cta {
+  color: hsl(31, 77%, 52%);
+}
+
+.card:nth-child(2) .cta {
+  color: hsl(184, 100%, 22%);
+}
+
+.card:last-child .cta {
+  color: hsl(179, 100%, 13%);
 }
 
 .cta p {
@@ -106,10 +107,31 @@ h1, p {
   text-transform: capitalize;
 }
 
+/* interactive button */
+
+.card > .cta:hover {
+  color: hsl(100, 100%, 100%);
+  border: 2px solid hsl(100, 100%, 100%);
+  cursor: pointer;
+}
+
+.card:nth-child(1) > .cta:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card:nth-child(2) > .cta:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card:last-child > .cta:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+
 /* desktop design */
 
 @media only screen and (min-width: 920px) {
   .card-container {
+    margin: 171px auto;
     flex-direction: row;
     justify-content: center;
   }
@@ -131,11 +153,7 @@ h1, p {
   .cta {
     margin-top: 83px;
   }
-  
 }
-
-
-
 
 /* FEM attribution  */
 
