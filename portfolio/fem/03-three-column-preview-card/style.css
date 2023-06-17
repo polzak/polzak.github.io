@@ -13,7 +13,12 @@ body {
   background-color: hsl(0, 0%, 95%);
   font-family: 'Lexend Deca', sans-serif;
   font-size: 15px;
+  font-weight: 400;
   color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1, p {
+  margin: 0;
 }
 
 /* card */
@@ -24,12 +29,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .card {
   width: 327px;
   height: 441px;
+  padding: 48px;
 }
 
 .card:nth-child(1) {
@@ -37,21 +42,28 @@ body {
   border-radius: 8px 8px 0 0;
 }
 
+.card:nth-child(1) .cta {
+  color: hsl(31, 77%, 52%);
+}
+
 .card:nth-child(2) {
   background-color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(2) .cta {
+  color: hsl(184, 100%, 22%);
 }
 
 .card:last-child {
   background-color: hsl(179, 100%, 13%);
   border-radius: 0 0 8px 8px;
+}
 
+.card:last-child(2) .cta {
+  color: hsl(179, 100%, 13%);
 }
 
 /* card contents */
-
-.card-contents {
-  margin: 48px;
-}
 
 .logo {
   width: 64px;
@@ -63,15 +75,36 @@ body {
 }
 
 .heading {
-  font-family: 'Big Shoulders Display', cursive;
   margin-top: 35px;
-  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%); /* #f2f2f2 */
+  text-transform: uppercase;
+}
+
+.desc {
+  margin-top: 25px;
+  line-height: 25px;
 }
 
 .cta {
+  margin-top: 25px;
   background-color: hsl(0, 0%, 95%);
+  width: 146px;
+  height: 48px;
+  border-radius: 25px;
+  border: transparent;
 }
 
+.cta p {
+  /* makes it wrapped in a p tag to match the text size with that in the Figma file */
+  display: inline-block;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: .8px;
+  text-transform: capitalize;
+}
 
 
 /* FEM attribution  */
