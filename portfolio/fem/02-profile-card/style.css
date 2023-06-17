@@ -17,6 +17,7 @@ body {
   line-height: 18px;
   color: #2e3349;
   font-weight: 700;
+  overflow: hidden;
 }
 
 h1, h2, p {
