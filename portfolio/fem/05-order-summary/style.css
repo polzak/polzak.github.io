@@ -49,7 +49,6 @@ main {
 
 .card-hero {
   width: 100%;
-
 }
 
 .card-hero img {
@@ -116,21 +115,21 @@ main {
 }
 
 .plan {
-  font-style: 14px;
+  font-size: 14px;
   font-weight: 900;
   line-height: 19px;
   color: #1F2E55;
 }
 
 .price {
-  font-style: 14px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 19px;
   color: #717FA6;
 }
 
 .change-link a {
-  font-style: 13px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 17px;
   color: #382AE1;
@@ -144,7 +143,7 @@ main {
   box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
   border-radius: 11px;
   border: 0px solid transparent;
-  font-style: 15px;
+  font-size: 15px;
   font-weight: 900;
   line-height: 20px;
   color: #ffffff;
@@ -153,16 +152,69 @@ main {
 .cancel-order {
   margin-top: 24px;
   padding: 0;
-  font-style: 15px;
+  font-size: 15px;
   font-weight: 900;
   line-height: 20px;
   color: #717fa6;
   border: 0px solid transparent;
   background-color: transparent;
+}
 
+@media only screen and (min-width: 687px) {
+  body {
+    background-image: url('images/pattern-background-desktop.svg');
+    font-size: 16px;
+  }
+  main {
+    max-width: 450px;
+  }
+  .card-information {
+    padding: 45px 48px 48px 48px;
+  }
+  .heading {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 28px;
+    line-height: 37px;
+  }
+  .desc {
+    margin: 17px 0 0 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .plan-box {
+    margin-top: 20px;
+    padding: 24px 24px;
+  }
+  .plan-price {
+    gap: 6px;
+  }
+  .plan, .price {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .change-link a {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .change-link a:hover {
+    color: #766CF1;
+  }
+  .cta, .cancel-order {
+    margin-top: 32px;
+  }
+  .cta:hover {
+    background: #766CF1;
+    cursor: pointer;
+  }
+  .cancel-order:hover {
+    color: #1F2E55;
+    cursor: pointer;
+  }
 }
 
 /* FEM attribution 👍 */
+
 .attribution {
   font-size: 11px;
   text-align: center;
