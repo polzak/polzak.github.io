@@ -23,10 +23,137 @@ input, select, textarea, button {
   font-family: inherit;
 }
 
-h1 {
-  font-family: 'Fraunces', serif;
+h1, p {
+  margin: 0;
 }
 
+.card {
+  max-width: 343px;
+  margin: 28px auto;
+}
+
+/* card contents */
+
+.card-text {
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-image img {
+  width: 100%;
+  vertical-align: bottom;
+  border-radius: 10px 10px 0 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.category {
+  font-size: 12px;
+  letter-spacing: 5px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.heading {
+  margin-top: 12px;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #1C232B;
+}
+
+.desc {
+  margin-top: 16px;
+}
+
+.price-tag {
+  margin-top: 24px;
+  display: flex;
+  gap: 19px;
+  align-items: center;  
+}
+
+.current-price {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #3D8168;
+}
+
+.original-price {
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+.cta {
+  margin-top: 20px;
+  width: 100%;
+  padding: 16px 0;
+  background-color: #3D8168;
+  border-radius: 8px;
+  border: 0px solid #979797;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.cta-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11.61px;
+}
+
+.cta-contents img {
+  /* vertical-align: bottom; */
+  height: 16px;
+}
+
+
+@media only screen and (min-width: 687px) {
+
+  main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .card {
+    max-width: 600px;
+    display: flex;
+    margin: 0 auto;
+  }
+  .card-text, .product-image {
+    flex: 1 1 50%;
+  }
+  .card-text {
+    padding: 32px;
+    border-radius: 0 10px 10px 0;
+  }
+  .product-image img {
+    filter: none;
+    border-radius: 10px 0 0 10px;
+  }
+  .heading {
+    margin-top: 20px;
+  }
+  .desc {
+    margin-top: 24px;
+  }
+  .price-tag {
+    margin-top: 29px;
+  }
+  .cta {
+    margin-top: 30px;
+  }
+}
 
 /* FEM attribution */
 
