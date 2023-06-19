@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution]()
-- Live Site URL: [live site URL](http://polzak.github.io/portfolio/fem/05-order-summary/index.html)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/order-summary-with-hover-effects-responsive-Wg9qZzIDoz)
+- Live Site URL: [My creation](http://polzak.github.io/portfolio/fem/05-order-summary/index.html)
 
 ## My process
 
@@ -40,11 +40,13 @@ Users should be able to:
 
 ### What I learned
 
-Some elements such as a button will have their own default border width or paddings; you need to reset them to be more precise with the original design.
+- Some elements such as a button will have their own default border width or paddings; you need to reset them to be more precise with the original design.  
+- The section HTML element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions. (MDN)
 
 ### Useful resources
 
 - [background-position](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)
+- [HTML section element](https://web.dev/learn/html/headings-and-sections/)
 
 ## Author
 
