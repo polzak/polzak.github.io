@@ -27,6 +27,12 @@ h1, p {
   margin: 0;
 }
 
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 .card {
   max-width: 343px;
   margin: 28px auto;
@@ -125,11 +131,7 @@ h1, p {
 }
 
 @media only screen and (min-width: 687px) {
-  main {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+  
   .card {
     max-width: 600px;
     display: flex;
