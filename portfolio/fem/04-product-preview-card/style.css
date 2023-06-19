@@ -1,0 +1,41 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: #F2EAE2;
+  /* base font */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #6C7289;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+}
+
+
+/* FEM attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
