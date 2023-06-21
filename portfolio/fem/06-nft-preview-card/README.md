@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://your-solution-url.com)
-- Live Site URL: [My design](https://polzak.github.io/portfolio/06-nft-preview-card/index.html)
+- Solution URL: [](#)
+- Live Site URL: [My design](https://polzak.github.io/portfolio/fem/06-nft-preview-card/index.html)
 
 ## My process
 
