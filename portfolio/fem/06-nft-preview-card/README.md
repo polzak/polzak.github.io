@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](#)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/nft-preview-card-using-tailwind-css-DYa-C7KWn3)
 - Live Site URL: [My design](https://polzak.github.io/portfolio/fem/06-nft-preview-card/index.html)
 
 ## My process
