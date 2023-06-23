@@ -205,6 +205,57 @@ main {
   width: 100%;
 }
 
+@media only screen and (min-width: 732px) {
+  main {
+    max-width: 730px;
+    min-height: 100vh;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+  }
+
+  .card-hero {
+    flex: 1 1 422px;
+    height: 280px;
+  }
+
+  .card-hero img {
+    height: 100%;
+    object-fit: contain;
+    object-position: 0 0;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .card-board {
+    flex: 1 1 445px;
+    margin-top: 0;
+    margin-left: -137px;
+    border-radius: 0 10px 10px 0;
+    padding: 32px 40px;
+  }
+
+  .card-heading {
+    color: #48556A;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    letter-spacing: 0.015625rem;
+  }
+
+  .card-info {
+    margin-top: 20px;
+
+  }
+
+  .card-share-button {
+    top: 212px;
+    right: 40px;
+  }
+}
+
 /* FEM attribution */
 
 .attribution {
