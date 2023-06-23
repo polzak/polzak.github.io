@@ -124,34 +124,39 @@ main {
 .card-share-button {
   position: absolute;
   /* bottom: 10px; */
-  top: 256px; /* 312 - 24 - 32. this will change when clicked on mobile. */
+  top: 256px;
+  /* 312 - 24 - 32. this will change when clicked on mobile. */
   right: 32px;
   z-index: 20;
   width: 32px;
   height: 32px;
-  background-color: #ECF2F8; /* this will change when clicked */
+  background-color: #ECF2F8;
+  /* this will change when clicked */
   border-radius: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .clicked {
+  /* added when the button is clicked */
   background-color: #6E8098;
-  top: 268px; /* 252 + 16 */
+  top: 268px;
+  /* 252 + 16 */
 }
 
 .card-share-button img {
   width: 15px;
 }
 
-.clicked > img {
+.clicked>img {
   filter: brightness(0) invert(1);
 }
 
 .card-share-container {
   background: #48556A;
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   width: 100%;
   height: 64px;
@@ -163,12 +168,15 @@ main {
   align-items: center;
 }
 
+.visible {
+  /* added when the button is clicked */
+  opacity: 1;
+}
+
 .card-share-box {
   display: flex;
   align-items: center;
   margin-left: 32px;
-  /* border-radius: 0 0 10px 10px; */
-
 }
 
 .share-heading {
@@ -191,7 +199,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .share-icon img {

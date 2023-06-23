@@ -19,7 +19,6 @@
         <img src="images/drawers.jpg" alt="image of drawers">
       </div>
       <div class="card-board">
-
         <h1 class="card-heading">
           Shift the overall look and feel by adding these wonderful
           touches to furniture in your home
@@ -30,11 +29,9 @@
           to help you make any room feel complete.
         </p>
         <div class="card-info">
-
           <div class="card-info-avatar">
             <img src="images/avatar-michelle.jpg" alt="avatar of the writer">
           </div>
-
           <div class="card-info-name-group">
             <div class="card-info-name">
               Michelle Appleton
@@ -45,12 +42,11 @@
           </div>
         </div>
 
-        <button class="card-share-button clicked">
+        <button id="shareButton" class="card-share-button">
           <img src="images/icon-share.svg" alt="share button">
         </button>
 
-
-        <div class="card-share-container">
+        <div id="shareContainer" class="card-share-container">
           <div class="card-share-box">
             <p class="share-heading">
               Share
@@ -68,7 +64,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -80,6 +75,25 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script>
+    let isClicked = false;
+    const shareButton = document.getElementById('shareButton');
+    const shareContainer = document.getElementById('shareContainer');
+    shareButton.onclick = function() {
+      isClicked = !isClicked;
+      switchOnClick(isClicked);
+    }
+
+    function switchOnClick(clicked) {
+      if (clicked) {
+        shareButton.classList.add('clicked');
+        shareContainer.classList.add('visible');
+      } else {
+        shareButton.classList.remove('clicked');
+        shareContainer.classList.remove('visible');
+      }
+    }
+  </script>
 </body>
 
 </html>
