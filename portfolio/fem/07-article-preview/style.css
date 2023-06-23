@@ -193,7 +193,7 @@ main {
   margin-left: 21px;
 }
 
-.share-icon {
+.share-icon a {
   width: 20px;
   height: 20px;
   display: flex;
@@ -201,9 +201,10 @@ main {
   justify-content: center;
 }
 
-.share-icon img {
+.share-icon a img {
   width: 100%;
 }
+
 
 @media only screen and (min-width: 732px) {
   main {
@@ -247,12 +248,35 @@ main {
 
   .card-info {
     margin-top: 20px;
-
   }
 
   .card-share-button {
     top: 212px;
     right: 40px;
+  }
+
+  .card-share-container {
+    width: 248px;
+    height: 55px;
+    top: 129px;
+    left: 265px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 0px rgba(201, 213, 225, 0.50);
+  }
+
+  .card-share-container::after {
+    position: absolute;
+    content: "";
+    top: 55px;
+    left: 112px;
+    border-top: 12px solid #48556A;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+  }
+
+  .card-share-box {
+    margin-left: 37px;
   }
 }
 
