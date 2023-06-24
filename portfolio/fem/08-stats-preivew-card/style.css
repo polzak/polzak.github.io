@@ -70,7 +70,7 @@ main {
   width: 100%;
   background-color: var(--card-bg-color);
   box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.20);
-  border-radius: .5rem;
+  border-radius: 8px;
 }
 
 .hero-bg {
@@ -82,7 +82,7 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-  border-radius: .5rem .5rem 0 0;
+  border-radius: 8px 8px 0 0;
   vertical-align: bottom;
 }
 
@@ -93,8 +93,8 @@ main {
   top: 0;
   left: 0;
   min-width: 100%;
-  min-height: 240px;
-  border-radius: .5rem .5rem 0 0;
+  min-height: 100%;
+  border-radius: 8px 8px 0 0;
   background-color: var(--accent-violet-color);
   opacity: .75;
   filter: contrast(80%) brightness(90%);
@@ -167,25 +167,25 @@ main {
   .card {
     display: flex;
     flex-direction: row-reverse;
-
   }
 
   .hero-bg {
     flex: 1 1 540px;
   }
-
+ 
   .card-text {
     flex: 1 1 570px;
     padding: 71px 109px 59px 72px;
   }
 
   .hero img {
-    object-fit: cover;
+    border-radius: 0 8px 8px 0;
   }
 
   .heading {
     font-size: 2.25rem;
     line-height: 2.75rem;
+    text-align: left;
   }
 
   .desc {
@@ -196,13 +196,19 @@ main {
   .stat-group {
     margin-top: 72px;
     flex-direction: row;
+    text-align: left;
+    justify-content: start;
+    gap: 0;
   }
 
+  .stat:nth-child(2) {
+    margin-left: 64px;
+  }
+
+  .stat:nth-child(3) {
+    margin-left: 61px;
+  }
 }
-
-
-
-
 
 /* FEM attribution */
 
