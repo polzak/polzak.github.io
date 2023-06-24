@@ -92,6 +92,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [CSS variable](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 - [CSS variable](https://www.w3schools.com/css/css3_variables.asp)
+- [CSS mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode)
+- [CSS filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
