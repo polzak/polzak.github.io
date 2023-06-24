@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](#)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/article-preview-component-SzRzx5WTzl)
 - Live Site URL: [My design](https://polzak.github.io/portfolio/fem/07-article-preview/index.html)
 
 ## My process
