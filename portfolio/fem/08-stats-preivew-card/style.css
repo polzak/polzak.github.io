@@ -187,6 +187,7 @@ main {
   .desc {
     margin-top: 25px;
     text-align: left;
+    padding-right: 16px;
   }
 
   .stat-group {
