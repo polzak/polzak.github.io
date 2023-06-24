@@ -20,9 +20,6 @@
   --desktop-width: 1110px;
 }
 
-/* font-family: 'Inter', sans-serif;
-font-family: 'Lexend Deca', sans-serif; */
-
 *,
 *::before,
 *::after {
@@ -106,7 +103,7 @@ main {
 }
 
 .heading {
-  color: #ffffff;
+  color: var(--main-h-color);
   text-align: center;
   font-size: 1.75rem;
   font-family: var(--font-inter);
@@ -122,8 +119,8 @@ main {
 .desc {
   margin-top: 16px;
   text-align: center;
+  color: var(--main-p-color);
   line-height: 1.5625rem;
-  opacity: 0.75;
 }
 
 .stat-group {
@@ -143,21 +140,20 @@ main {
 }
 
 .stat-figure {
+  color: #ffffff;
   font-size: 1.5rem;
   font-weight: 700;
   padding: 2px 0;
 }
 
 .stat-title {
+  color: var(--stat-h-color);
   font-size: .75rem;
   font-family: var(--font-lexend);
   line-height: 1.5625rem;
   letter-spacing: .0625rem;
   text-transform: uppercase;
-  opacity: 0.6;
 }
-
-
 
 @media only screen and (min-width: 1112px) {
   main {
@@ -172,7 +168,7 @@ main {
   .hero-bg {
     flex: 1 1 540px;
   }
- 
+
   .card-text {
     flex: 1 1 570px;
     padding: 71px 109px 59px 72px;

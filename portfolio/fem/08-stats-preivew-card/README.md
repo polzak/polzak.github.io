@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My solution](#)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/stats-preview-card-using-css-variables-1hr9FDzvzn)
 - Live Site URL: [My design](https://polzak.github.io/fem/portfolio/08-stats-preview-card/index.html)
 
 ## My process
