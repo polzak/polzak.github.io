@@ -40,7 +40,7 @@
               Reaction
             </p>
             <p class="bar-score">
-              <em>80</em>/ 100
+              <em id="reactionScore"></em>/ 100
             </p>
           </div>
           <div class="bar memory">
@@ -48,7 +48,7 @@
               Memory
             </p>
             <p class="bar-score">
-              <em>92</em>/ 100
+              <em id="memoryScore"></em>/ 100
             </p>
           </div>
           <div class="bar verbal">
@@ -56,7 +56,7 @@
               Verbal
             </p>
             <p class="bar-score">
-              <em>61</em>/ 100
+              <em id="verbalScore"></em>/ 100
             </p>
           </div>
           <div class="bar visual">
@@ -64,7 +64,7 @@
               Visual
             </p>
             <p class="bar-score">
-              <em>73</em>/ 100
+              <em id="visualScore"></em>/ 100
             </p>
           </div>
         </div>
@@ -78,6 +78,25 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+  <script type="module">
+    import scoreData from './data.json' assert { type: 'json' };
+
+    const reaction = document.getElementById('reactionScore');
+    const memory = document.getElementById('memoryScore');
+    const verbal = document.getElementById('verbalScore');
+    const visual = document.getElementById('visualScore');
+
+    reaction.textContent = fillScore(scoreData, 'reaction');
+    memory.textContent = fillScore(scoreData, 'memory');
+    verbal.textContent = fillScore(scoreData, 'verbal');
+    visual.textContent = fillScore(scoreData, 'visual');
+
+    function fillScore(data, cat) {
+      return data.find((d) => d.category.toLowerCase() === cat)?.score || 0;
+    }
+
+  </script>
 </body>
 
 </html>

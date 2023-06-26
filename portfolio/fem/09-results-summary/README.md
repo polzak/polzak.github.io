@@ -55,17 +55,28 @@ Users should be able to:
 
 - At first, the upper results box's box-shadow was overlapped by the lower summary box. When I applied `position: relative;` to the upper box, the box-shadow was not overlapped any more and appeared over the lower box. I think the `position: relative;` made another context for the upper box and the box shadow was able to be displayed. `z-index` also could work on a box once you applied `position: relative` to it.
 
+- how to read a JSON file in JavaScript with import statement:
 
-### Continued development
+```html
+<html lang="en">
+    // ...
+    <body>
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>
+```
+```js
+import data from './data.json' assert { type: 'json' };
+console.log(data);
+```
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Note: if we run this locally – then we would get the CORS error. (Instead, use local server to open the index.html file.)
 
 ### Useful resources
 
 - [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
-- [tectContent property](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)
+- [textContent property](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)
+- [How to Read a JSON file in JavaScript with the Import Statement](https://www.freecodecamp.org/news/how-to-read-json-file-in-javascript/)
 
 
 ## Author
