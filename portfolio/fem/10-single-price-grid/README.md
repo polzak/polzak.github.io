@@ -10,6 +10,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -36,6 +37,10 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - Mobile-first workflow
+
+### What I learned
+
+[Heading levels should increase by one.](https://dequeuniversity.com/rules/axe/4.6/heading-order?application=axeAPI) 
 
 ## Author
 
