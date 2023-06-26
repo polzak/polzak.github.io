@@ -72,6 +72,9 @@ console.log(data);
 
 Note: if we run this locally – then we would get the CORS error. (Instead, use local server to open the index.html file.)
 
+- It's good to avoid setting fixed `padding-left` or `padding-right` values in an element that belongs to a box: you will not be able to set your box width using percentage values due to their fixed width.
+
+
 ### Useful resources
 
 - [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
