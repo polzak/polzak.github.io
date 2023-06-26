@@ -269,6 +269,11 @@ main {
   line-height: 1.4375rem;
 }
 
+.continue-button:hover {
+  background: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
+  cursor: pointer;
+}
+
 
 @media only screen and (min-width: 738px) {
   main {
@@ -357,7 +362,6 @@ main {
     margin-top: 41px;
   }
 }
-
 
 
 /* FEM attribution */

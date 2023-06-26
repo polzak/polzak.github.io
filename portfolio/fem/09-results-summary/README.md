@@ -29,27 +29,19 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/images/screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My solution](#)
+- Live Site URL: [My design](https://polzak.github.io/portfolio/fem/09-results-summary/index.html)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Javascript
 
 ### What I learned
 
@@ -74,24 +66,13 @@ Note: if we run this locally – then we would get the CORS error. (Instead, use
 
 - It's good to avoid setting fixed `padding-left` or `padding-right` values in an element that belongs to a box: you will not be able to set your box width using percentage values due to their fixed width.
 
-
 ### Useful resources
 
 - [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 - [textContent property](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)
 - [How to Read a JSON file in JavaScript with the Import Statement](https://www.freecodecamp.org/news/how-to-read-json-file-in-javascript/)
 
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-
-
-
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Seungwan Kim's Portfolio](https://polzak.github.io)
+- Frontend Mentor - [@polzak](https://www.frontendmentor.io/profile/polzak)
