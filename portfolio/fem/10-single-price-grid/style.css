@@ -9,6 +9,7 @@
   /* color variables */
   /* primary */
   --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsla(179, 62%, 43%, 0.75);
   --bright-yellow: hsl(71, 73%, 54%);
   /* neutral */
   --light-gray: hsl(204, 43%, 93%);
@@ -47,6 +48,11 @@ p {
   margin: 0;
 }
 
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   vertical-align: bottom;
 }
@@ -60,11 +66,11 @@ main {
 
 .card {
   width: 100%;
-
   border-radius: 5px 5px 0 0;
   box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
-
 }
+
+/* the top box */
 
 .intro {
   background: #ffffff;
@@ -85,7 +91,6 @@ main {
   font-weight: 700;
   line-height: 1.25rem;
   letter-spacing: -0.0116875rem;
-
 }
 
 .desc {
@@ -94,8 +99,96 @@ main {
   font-size: 0.875rem;
   line-height: 1.625rem;
   letter-spacing: -0.0109375rem;
-
 }
+
+/* the middle and the bottom box */
+
+.lower-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* the middle box */
+
+.plan {
+  padding: 24px;
+  background-color: var(--cyan);
+  color: #ffffff;
+}
+
+.section-heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.0140625rem;
+  line-height: 1.3125rem;
+}
+
+.price {
+  margin-top: 18px;
+  display: flex;
+}
+
+.price strong {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.025rem;
+  color: hsla(100, 100%, 100%, 1);
+}
+
+.price span {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.0125rem;
+  color: hsla(100, 100%, 100%, .5);
+  font-weight: 500;
+  margin-top: 6px;
+  margin-left: 11px;
+}
+
+.plan-desc {
+  margin-top: 4px;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.0125rem;
+}
+
+.cta {
+  margin-top: 26px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  text-align: center;
+  border-radius: 5px;
+  background: var(--bright-yellow);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.0125rem;
+}
+
+/* the bottom box */
+
+.offer {
+  background-color: var(--light-cyan);
+  padding: 24px 49px 24px 24px;
+  color: #ffffff;
+}
+
+.offer-list {
+  list-style: none;
+  margin-top: 18px;
+}
+
+.offer-list li {
+font-size: 0.875rem;
+line-height: 1.25rem;
+letter-spacing: -0.0109375rem;
+color: hsla(100, 100%, 100%, 0.75);
+}
+
+
+/* FEM attribution */
 
 .attribution {
   font-size: 11px;
