@@ -80,24 +80,38 @@
   </div> -->
 
   <script>
-    // import scoreData from 'http://polzak.github.io/portfolio/fem/09-results-summary/data.json' assert { type: 'json' };
-    const dataSource = 'http://polzak.github.io/portfolio/fem/09-results-summary/data.json';
+    const scoreData = [
+      {
+        "category": "Reaction",
+        "score": 80,
+        "icon": "./assets/images/icon-reaction.svg"
+      },
+      {
+        "category": "Memory",
+        "score": 92,
+        "icon": "./assets/images/icon-memory.svg"
+      },
+      {
+        "category": "Verbal",
+        "score": 61,
+        "icon": "./assets/images/icon-verbal.svg"
+      },
+      {
+        "category": "Visual",
+        "score": 72,
+        "icon": "./assets/images/icon-visual.svg"
+      }
+    ];
 
-    fetch(dataSource)
-      .then((response) => response.json())
-      .then((json) => {
-        const scoreData = json;
+    const reaction = document.getElementById('reactionScore');
+    const memory = document.getElementById('memoryScore');
+    const verbal = document.getElementById('verbalScore');
+    const visual = document.getElementById('visualScore');
 
-        const reaction = document.getElementById('reactionScore');
-        const memory = document.getElementById('memoryScore');
-        const verbal = document.getElementById('verbalScore');
-        const visual = document.getElementById('visualScore');
-
-        reaction.textContent = fillScore(scoreData, 'reaction');
-        memory.textContent = fillScore(scoreData, 'memory');
-        verbal.textContent = fillScore(scoreData, 'verbal');
-        visual.textContent = fillScore(scoreData, 'visual');
-      });
+    reaction.textContent = fillScore(scoreData, 'reaction');
+    memory.textContent = fillScore(scoreData, 'memory');
+    verbal.textContent = fillScore(scoreData, 'verbal');
+    visual.textContent = fillScore(scoreData, 'visual');
 
     function fillScore(data, cat) {
       const dataObj = data.find((d) => d.category.toLowerCase() === cat);

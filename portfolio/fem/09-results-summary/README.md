@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My solution](#)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/results-summary-using-javascript-to-get-data-from-a-json-file-io_dbL9_jt)
 - Live Site URL: [My design](https://polzak.github.io/portfolio/fem/09-results-summary/index.html)
 
 ## My process
