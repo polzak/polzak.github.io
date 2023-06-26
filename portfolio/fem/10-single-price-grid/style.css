@@ -1,0 +1,75 @@
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+  /* 13px == 0.8125rem */
+  /* 15px == 0.9375rem */
+  /* 18px == 1.125rem */
+  --base-font-size: 1rem;
+  font-family: 'Karla', sans-serif;
+  /* color variables */
+  /* primary */
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  /* neutral */
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  /* dimension */
+  --mobile-width: 311px;
+  --desktop-width: 635px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: var(--light-gray);
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+
+button {
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+main {
+  max-width: var(--mobile-width);
+  margin: 72px auto;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+}
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
