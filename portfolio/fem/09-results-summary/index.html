@@ -79,21 +79,30 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 
-  <script type="module">
-    import scoreData from 'http://polzak.github.io/portfolio/fem/09-results-summary/data.json' assert { type: 'json' };
+  <script>
+    // import scoreData from 'http://polzak.github.io/portfolio/fem/09-results-summary/data.json' assert { type: 'json' };
+    const dataSource = './data.json';
 
-    const reaction = document.getElementById('reactionScore');
-    const memory = document.getElementById('memoryScore');
-    const verbal = document.getElementById('verbalScore');
-    const visual = document.getElementById('visualScore');
+    fetch(dataSource)
+      .then((response) => response.json())
+      .then((json) => {
+        const scoreData = json;
 
-    reaction.textContent = fillScore(scoreData, 'reaction');
-    memory.textContent = fillScore(scoreData, 'memory');
-    verbal.textContent = fillScore(scoreData, 'verbal');
-    visual.textContent = fillScore(scoreData, 'visual');
+        const reaction = document.getElementById('reactionScore');
+        const memory = document.getElementById('memoryScore');
+        const verbal = document.getElementById('verbalScore');
+        const visual = document.getElementById('visualScore');
+
+        reaction.textContent = fillScore(scoreData, 'reaction');
+        memory.textContent = fillScore(scoreData, 'memory');
+        verbal.textContent = fillScore(scoreData, 'verbal');
+        visual.textContent = fillScore(scoreData, 'visual');
+      });
 
     function fillScore(data, cat) {
-      return data.find((d) => d.category.toLowerCase() === cat)?.score || 0;
+      const dataObj = data.find((d) => d.category.toLowerCase() === cat);
+      const score = (dataObj ? dataObj.score : 0).toString();
+      return score;
     }
 
   </script>
