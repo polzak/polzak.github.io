@@ -72,12 +72,12 @@ img {
 .logo {
   margin-top: 38.2px;
   width: 120px;
-
+  height: 19px;
+  
 }
 
 .logo img {
   width: 100%;
-
 }
 
 /* hero image */
@@ -91,7 +91,6 @@ img {
 .hero img {
   width: 100%;
 }
-
 
 /* text contents */
 
@@ -124,10 +123,8 @@ img {
 
 .cta button {
   width: 200px;
-
   padding-top: 11.29px;
   padding-bottom: 10.71px;
-  
 
   border-radius: 20px;
   background: #ffffff;
@@ -142,6 +139,64 @@ img {
 
 /* social icons */
 
+.social-icon-group {
+  display: flex;
+  margin-top: 64px;
+  justify-content: center;
+  gap: 10.86px;
+
+}
+
+.social-icon {
+  width: 27.14px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  border-radius: 28px;
+}
+
+.social-icon svg {
+  width: 60%;
+  fill: #fff;
+}
+
+
+
+@media only screen and (min-width: 451px) {
+  .social-icon-group {
+    margin-top: 48px;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .hero {
+    margin-top: 50px;
+  }
+  
+  .heading {
+    margin-top: 40px;
+  }
+
+  .social-icon-group {
+    margin-top: 36px;
+  }
+}
+
+@media only screen and (min-width: 630px) {
+  .hero {
+    margin-top: 40px;
+  }
+  
+  .heading {
+    margin-top: 30px;
+  }
+
+  .social-icon-group {
+    margin-top: 24px;
+  }
+}
 
 
 
