@@ -1,0 +1,117 @@
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+  /* 13px == 0.8125rem */
+  /* 15px == 0.9375rem */
+  /* 18px == 1.125rem */
+  --base-font-size: 1rem;
+  --open-sans-font: 'Open Sans', sans-serif;
+  --poppins-font: 'Poppins', sans-serif;
+  /* color variables */
+  /* primary */
+  --main-bg-violet: hsl(257, 40%, 49%);
+  --active-soft-magenta: hsl(300, 69%, 71%);
+  /* neutral */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: var(--main-bg-violet);
+  background-image: url("./images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 100%;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+
+button {
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* header */
+
+.header {
+  padding-left: 40px;
+}
+
+.logo {
+  margin-top: 38.2px;
+  width: 120px;
+  height: 19px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+/* hero image */
+
+.hero {
+  width: 100%;
+  padding: 0 40px;
+  margin-top: 70px;
+}
+
+.hero img {
+  width: 100%;
+}
+
+
+/* text contents */
+
+.heading {
+  margin-top: 60px;
+}
+
+
+/* social icons */
+
+
+
+
+
+/* FEM attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
