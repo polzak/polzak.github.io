@@ -112,7 +112,6 @@ img {
 
 .desc {
   margin: 16px 36px 0 35px;
-
   color: #ffffff;
   text-align: center;
   font-size: 1rem;
@@ -129,19 +128,20 @@ img {
   width: 200px;
   padding-top: 11.29px;
   padding-bottom: 10.71px;
-
   border-radius: 20px;
   background: #ffffff;
   box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.27);
-
   color: var(--main-bg-violet);
   font-size: .75rem;
   font-family: var(--poppins-font);
   line-height: 1.125rem;
+  transition: all .3s ease;
 }
 
 .cta button:hover {
   background-color: var(--active-soft-magenta);
+  color: #fff;
+  cursor: pointer;
 }
 
 /* social icons */
@@ -162,6 +162,7 @@ img {
   justify-content: center;
   border: 0.798px solid #ffffff;
   border-radius: 28px;
+  transition: all .3s ease;
 }
 
 .social-icon svg {
@@ -171,6 +172,7 @@ img {
 
 .social-icon:hover {
   border-color: var(--active-soft-magenta);
+  cursor: pointer;
 }
 
 .social-icon:hover svg {
@@ -268,7 +270,7 @@ img {
   .social-icon {
     width: 40px;
     height: 40px;
-    border-width: 1.176px;
+    border-width: 1.176px;    
   }
 }
 
