@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [My solution](#)
-- Live Site URL: [My design](https://polzak.github.io/portfolio/fem/11-)
+- Live Site URL: [My design](https://polzak.github.io/portfolio/fem/11-huddle-landing-page/index.html)
 
 ## My process
 
