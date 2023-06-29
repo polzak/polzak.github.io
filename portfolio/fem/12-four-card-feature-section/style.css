@@ -8,12 +8,13 @@
   --poppins-font: 'Poppins', sans-serif;
   /* color variables */
   /* primary */
-  --red: hsl(0, 78%, 62%);
   --cyan: hsl(180, 62%, 55%);
+  --red: hsl(0, 78%, 62%);
   --orange: hsl(34, 97%, 64%);
   --blue: hsl(212, 86%, 64%);
   /* neutral */
   --very-dark-blue: hsl(234, 12%, 34%);
+  --very-dark-blue-half: hsla(234, 12%, 34%, .5);
   --grayish-blue: hsl(229, 6%, 66%);
   --very-light-gray: hsl(0, 0%, 98%);
 }
@@ -26,6 +27,7 @@
 
 body {
   margin: 0;
+  font-family: var(--poppins-font);
 }
 
 input,
@@ -56,10 +58,141 @@ img {
   vertical-align: bottom;
 }
 
+/* main */
 
+.container {
+  margin: 0 8.534%;
+}
 
+/* headline */
+
+.sub-heading {
+  margin-top: 85px;
+  text-align: center;
+  color: var(--very-dark-blue);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 275;
+  line-height: normal;
+  letter-spacing: 0.0104375rem;
+}
+
+.heading {
+  margin-top: 1px;
+  color: var(--very-dark-blue);
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.0104375rem;
+
+}
+
+.desc {
+  margin-top: 13px;
+  color: var(--very-dark-blue-half);
+  text-align: center;
+  font-size: var(--base-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  letter-spacing: 0.0065rem;
+}
+
+/* card */
+
+.card-container {
+  margin-top: 76px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card {
+  /* structure */
+  width: 311px;
+  height: 222px;
+  padding: 27px 28px 28px 28px;
+  /* shape */
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
+  border-top-width: 3.552px;
+  border-top-style: solid;
+  /* inside */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-heading {
+  color: var(--very-dark-blue);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.card-desc {
+  margin-top: 1px;
+  color: var(--very-dark-blue-half);
+  font-size: .8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4375rem;
+  letter-spacing: 0.005625rem;
+}
+
+.card::after {
+  content: '';
+  background-size: 57px 57px; /* the icon */
+  background-repeat: no-repeat;
+  width: 57px; /* the pseudo element */
+  height: 57px;
+  display: flex;
+  align-self: end;
+}
+
+.card:nth-child(1) {
+  border-top-color: var(--cyan);
+}
+
+.card:nth-child(1)::after {
+  background-image: url("./images/icon-supervisor.svg");
+}
+
+.card:nth-child(2) {
+  border-top-color: var(--red);
+}
+
+.card:nth-child(2)::after {
+  background-image: url("./images/icon-team-builder.svg");
+}
+
+.card:nth-child(3) {
+  border-top-color: var(--orange);
+}
+
+.card:nth-child(3)::after {
+  background-image: url("./images/icon-karma.svg");
+}
+
+.card:nth-child(4) {
+  border-top-color: var(--blue);
+}
+
+.card:nth-child(4)::after {
+  background-image: url("./images/icon-calculator.svg");
+}
 
 /* FEM attribution */
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
