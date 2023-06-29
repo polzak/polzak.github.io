@@ -1,0 +1,65 @@
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+  /* 13px == 0.8125rem */
+  /* 15px == 0.9375rem */
+  /* 18px == 1.125rem */
+  --base-font-size: .9375rem;
+  --poppins-font: 'Poppins', sans-serif;
+  /* color variables */
+  /* primary */
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  /* neutral */
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+
+button {
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+
+
+
+/* FEM attribution */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
