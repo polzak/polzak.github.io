@@ -28,6 +28,7 @@
 body {
   margin: 0;
   font-family: var(--poppins-font);
+  background-color: var(--very-light-gray);
 }
 
 input,
@@ -88,7 +89,6 @@ img {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.0104375rem;
-
 }
 
 .desc {
@@ -110,7 +110,6 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 25px;
-
 }
 
 .card {
@@ -195,9 +194,10 @@ img {
   margin-top: 24px;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 651px) {
   .desc {
-    width: 568.1px;
+    width: 540px;
+    margin: auto;
   } 
 }
 
@@ -209,10 +209,6 @@ img {
     align-items: center;
   }
 
-  .desc {
-    width: inherit;
-  }
-
   .card-container {
     flex-direction: row;
     gap: 30px;
@@ -221,10 +217,30 @@ img {
 }
 
 @media only screen and (min-width: 1112px) {
+  .sub-heading, .heading {
+    font-size: 36px;
+    letter-spacing: 0.015625rem;
+  }
+
   .card {
     min-width: 350px;
     height: 250px;
+    padding: 32px;
   }
+
+  .card-desc {
+    margin-top: 6px;
+  }
+  
+  .card::after {
+    background-size: 64px 64px; /* the icon */
+    width: 64px; /* the pseudo element */
+    height: 64px;
+  }
+
+  .card-col > .card:nth-child(2) {
+    margin-top: 30px;
+  } 
 }
 
 /* FEM attribution */
