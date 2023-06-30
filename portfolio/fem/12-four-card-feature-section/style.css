@@ -62,12 +62,14 @@ img {
 
 .container {
   margin: 0 8.534%;
+  padding: 85px 0 78px 0;
+  display: flex;
+  justify-content: center;
 }
 
 /* headline */
 
 .sub-heading {
-  margin-top: 85px;
   text-align: center;
   color: var(--very-dark-blue);
   font-size: 1.5rem;
@@ -104,7 +106,6 @@ img {
 
 .card-container {
   margin-top: 76px;
-  padding-bottom: 78px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,36 +159,72 @@ img {
   display: flex;
 }
 
-.card:nth-child(1) {
+.supervisor {
   border-top-color: var(--cyan);
 }
 
-.card:nth-child(1)::after {
+.supervisor::after {
   background-image: url("./images/icon-supervisor.svg");
 }
 
-.card:nth-child(2) {
+.team-builder {
   border-top-color: var(--red);
 }
 
-.card:nth-child(2)::after {
+.team-builder::after {
   background-image: url("./images/icon-team-builder.svg");
 }
 
-.card:nth-child(3) {
+.karma {
   border-top-color: var(--orange);
 }
 
-.card:nth-child(3)::after {
+.karma::after {
   background-image: url("./images/icon-karma.svg");
 }
 
-.card:nth-child(4) {
+.calculator {
   border-top-color: var(--blue);
 }
 
-.card:nth-child(4)::after {
+.calculator::after {
   background-image: url("./images/icon-calculator.svg");
+}
+
+.card-col > .card:nth-child(2) {
+  margin-top: 24px;
+}
+
+@media only screen and (min-width: 700px) {
+  .desc {
+    width: 568.1px;
+  } 
+}
+
+@media only screen and (min-width: 995px) {
+  .container {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .desc {
+    width: inherit;
+  }
+
+  .card-container {
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 64px;
+  } 
+}
+
+@media only screen and (min-width: 1112px) {
+  .card {
+    min-width: 350px;
+    height: 250px;
+  }
 }
 
 /* FEM attribution */
