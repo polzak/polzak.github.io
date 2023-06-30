@@ -197,7 +197,7 @@ img {
 @media only screen and (min-width: 651px) {
   .desc {
     width: 540px;
-    margin: auto;
+    margin: 13px auto 0;
   } 
 }
 
