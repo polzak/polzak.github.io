@@ -72,7 +72,7 @@ header {
   padding-top: 3em;
 }
 
-header h2 {
+header .desc {
   margin-top: 1em;
   font-weight: 400;
 }
