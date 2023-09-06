@@ -1,6 +1,107 @@
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+  /* 13px == 0.8125rem */
+  /* 15px == 0.9375rem */
+  /* 18px == 1.125rem */
+  /* --base-font-size: 1rem; */
+  /* --poppins-font: 'Poppins', sans-serif; */
+  /* color variables */
+  /* primary */
+  /* --cyan: hsl(180, 62%, 55%);
+  --red: hsl(0, 78%, 62%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%); */
+  /* neutral */
+  /* --very-dark-blue: hsl(234, 12%, 34%);
+  --very-dark-blue-half: hsla(234, 12%, 34%, .5);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%); */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  /* background: linear-gradient(to right, hsl(215, 80%, 97%), hsl(215, 80%, 99%)); */
+
+  /* background-color: hsl(0, 0%, 98%); */
+
+  background: rgb(247, 254, 255);
+  background: linear-gradient(90deg, rgba(247, 254, 255, 1) 85%, rgba(130, 216, 233, 1) 100%);
+
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+
+button {
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  padding-top: 3em;
+}
+
 .main {
   max-width: 800px;
   margin: 0 auto;
   padding: 2em;
+}
 
+.image-wrapper {
+  width: 100%;
+  margin-top: 3em;
+}
+
+.image-wrapper a h3 {
+  display: inline-block;
+  background-color: #1571B9;
+  color: #eeeeee;
+  padding: 1em;
+  border-radius: 8px 8px 0 0;
+}
+
+.image-wrapper a img {
+  width: 100%;
+  box-shadow: 2px 2px 4px #999999;
+  transition: all .3s ease;
+}
+
+.image-wrapper a img:hover {
+  opacity: .4;
+  box-shadow: 4px 4px 8px #999999;
 }
