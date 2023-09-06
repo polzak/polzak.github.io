@@ -27,13 +27,9 @@
 
 body {
   margin: 0;
-  /* background: linear-gradient(to right, hsl(215, 80%, 97%), hsl(215, 80%, 99%)); */
-
-  /* background-color: hsl(0, 0%, 98%); */
-
   background: rgb(247, 254, 255);
   background: linear-gradient(90deg, rgba(247, 254, 255, 1) 85%, rgba(130, 216, 233, 1) 100%);
-
+  font-family: 'Ubuntu', sans-serif;
 }
 
 input,
@@ -74,6 +70,11 @@ a {
 header {
   text-align: center;
   padding-top: 3em;
+}
+
+header h2 {
+  margin-top: 1em;
+  font-weight: 400;
 }
 
 .main {
