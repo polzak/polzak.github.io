@@ -1,6 +1,7 @@
 :root {
   box-sizing: border-box;
   font-size: 16px;
+  font-family: 'Exo', sans-serif;
   /* 13px == 0.8125rem */
   /* 15px == 0.9375rem */
   /* 18px == 1.125rem */
@@ -29,7 +30,6 @@ body {
   margin: 0;
   background: rgb(247, 254, 255);
   background: linear-gradient(90deg, rgba(247, 254, 255, 1) 85%, rgba(130, 216, 233, 1) 100%);
-  font-family: 'Ubuntu', sans-serif;
 }
 
 input,
